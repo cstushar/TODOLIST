@@ -19,8 +19,8 @@ COPY . .
 # Build React app
 RUN npm run build
 
-# Expose port 3000 to the outside world
-EXPOSE 3000
+# Expose port 5173 to the outside world
+EXPOSE 5173
 
 # Command to run the application
-CMD ["npm", "run", "dev"]  # Explicitly run npm run dev
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]

@@ -16,8 +16,8 @@ COPY . .
 # Copy .env file to container
 COPY .env .env
 
-# Expose port 3001 to the outside world
-EXPOSE 3001
+# Expose port 5000 to the outside world
+EXPOSE 5000
 
 # Command to run the server using nodemon
 CMD ["npm", "start"]
