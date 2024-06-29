@@ -13,8 +13,8 @@ RUN npm install
 # Copy all server files to container
 COPY . .
 
-# Expose port 4000 to the outside world
-EXPOSE 4000
+# Expose port 3001 to the outside world
+EXPOSE 3001
 
-# Command to run the server using nodemon for hot reload
-CMD ["npm", "run", "dev"]
+# Command to run the server using nodemon
+CMD ["npm", "start"]
