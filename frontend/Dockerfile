@@ -10,6 +10,9 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
+# Install Sass for SCSS support
+RUN npm install -D sass
+
 # Copy all frontend files to container
 COPY . .
 
