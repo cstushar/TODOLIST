@@ -13,6 +13,9 @@ RUN npm install
 # Copy all server files to container
 COPY . .
 
+# Copy .env file to container
+COPY .env .env
+
 # Expose port 3001 to the outside world
 EXPOSE 3001
 
